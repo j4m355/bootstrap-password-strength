@@ -12,6 +12,6 @@ More than is done..
 Rules
 -----
 Could do with being better - clearer - easier to define.
-Tried using jquery validate add rules but it wouldnt play ball
+Tried using jquery validate add rules but it wouldnt play ball - if anyone wants to help..
 
 
