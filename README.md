@@ -14,4 +14,8 @@ Rules
 Could do with being better - clearer - easier to define.
 Tried using jquery validate add rules but it wouldnt play ball - if anyone wants to help..
 
+Issues
+------
+Doesnt work in IE for some effed up reason
+
 
