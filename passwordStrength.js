@@ -24,14 +24,14 @@ return this.each(function(){
                 .addClass( this.defaultClass )
                 .addClass( this.opts.classes[ t ] );
         })
-        // Removed generate password button creation
+        
 });
 
 function getPasswordStrength(H){
         var D=(H.length);
 
         // Added below to make all passwords less than 4 characters show as weak
-        if (D<4) { D=0 }
+        if (D<5) { D=0 }
 
 
         if(D>5){
@@ -53,13 +53,13 @@ function getPasswordStrength(H){
 }
 
 
-// Removed generate password function
+
 };
 
 $(document)
 .ready(function(){
 	$("#passwordStrength").keyup(function() { 	
-		//alert("beasn")
-		$('input[name="passwordStrength"]').passwordStrength({targetDiv: '#passwordStrength',classes : Array('passwordWeak','passwordMedium','passwordStrong')});
+		
+		$('input[name="passwordStrength"]').passwordStrength({targetDiv: '.passwordTarget',classes : Array('passwordWeak','passwordMedium','passwordStrong')});
 	});
 });

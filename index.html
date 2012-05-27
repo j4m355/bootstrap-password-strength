@@ -3,12 +3,15 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 	<script type="text/javascript" src="/passwordStrength.js"></script>
+
+	<link rel="stylesheet" href="/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="/passwordStrength.css" type="text/css">
 </head>
 
 <body>
 	<form>
-		<input id="passwordStrength" name="passwordStrength"  type="text"/>
+		<input id="passwordStrength" class="passwordTarget control-group" name="passwordStrength"  type="text"/>
+		<span class="help-inline passwordTarget">Result</span>
 	</form>
 </body>
 
