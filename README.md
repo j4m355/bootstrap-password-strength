@@ -8,7 +8,6 @@ Textboxes take the twitter bootstrap inheritted styles but you can leave out the
 Still to do
 -----------
 More than is done..
-The box only changes colour - basic at this stage...work in progress.
 
 Rules
 -----
