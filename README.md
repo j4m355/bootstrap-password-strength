@@ -16,7 +16,8 @@ Tried using jquery validate add rules but it wouldnt play ball - if anyone wants
 
 Issues
 ------
-Doesnt work in IE for some effed up reason
+-Doesnt work in IE for some effed up reason
+-Type a strong password and then a weak one - it doesnt update
 
 Demo
 -----
