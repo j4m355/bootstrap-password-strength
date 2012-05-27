@@ -18,4 +18,8 @@ Issues
 ------
 Doesnt work in IE for some effed up reason
 
+Demo
+-----
+	http://www.j4m355.com/Bootstrap-Password-Strength
+
 
