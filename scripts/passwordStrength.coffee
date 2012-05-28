@@ -11,7 +11,7 @@ $.fn.passwordStrength = (options) ->
     if passwordLength >= 5 and passwordLength <8
       passwordLengthScore = 2
     if passwordLength < 6
-      passwordLengthScore = 1
+      passwordLengthScore = 0
 
 
     #upper case test
@@ -25,7 +25,7 @@ $.fn.passwordStrength = (options) ->
     uppercaseScore = 0
    
     if dump.length == 0
-      uppercaseScore = 1
+      uppercaseScore = 0
     if dump.length == 1
       uppercaseScore = 2
     if dump.length > 1
@@ -33,7 +33,7 @@ $.fn.passwordStrength = (options) ->
 
     #special characters
 
-    specialCharsRegString = new RegExp("^(a-z|A-Z|0-9)*[^#$%^&*()']*$!\"£")
+    specialCharsRegString = new RegExp("^(a-z|A-Z|0-9)*[^#$%^&*()'*$!\"£]")
     passCharArray = password.split('')
     
     nonSpecialsCount = 0
@@ -44,28 +44,15 @@ $.fn.passwordStrength = (options) ->
 
     specialsCount = password.length - nonSpecialsCount
 
-    console.log nonSpecialsCount
-
+    
     if specialsCount > 0
       specialScore = 3
     else
       specialScore = 1
 
 
-
-
-
-
-
-
-
-
-
-
     passwordScore = passwordLengthScore + uppercaseScore + specialScore 
-    #console.log  specialScore
-    #console.log  specialScore
-    #console.log  passwordScore
+    console.log passwordScore
 
     passwordScore
       
