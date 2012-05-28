@@ -44,7 +44,9 @@ $.fn.passwordStrength = (options) ->
 
     specialsCount = password.length - nonSpecialsCount
 
-    if specialsCount >= 1
+    console.log nonSpecialsCount
+
+    if specialsCount > 0
       specialScore = 3
     else
       specialScore = 1
@@ -61,9 +63,7 @@ $.fn.passwordStrength = (options) ->
 
 
     passwordScore = passwordLengthScore + uppercaseScore + specialScore 
-
-    console.log  nonSpecialsCount
-    console.log  specialsCount
+    #console.log  specialScore
     #console.log  specialScore
     #console.log  passwordScore
 
