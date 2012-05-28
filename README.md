@@ -5,18 +5,17 @@ Changes colour of password text box according to the password rules.  Uses the T
 
 Textboxes take the twitter bootstrap inheritted styles but you can leave out the bootstrap stuff to use your own formatting and keep the text box changing.
 
+Development is using coffee-script but compiled javascript is uploaded
+
 Still to do
 -----------
 More than is done..
 
-Rules
------
-Could do with being better - clearer - easier to define.
-Tried using jquery validate add rules but it wouldnt play ball - if anyone wants to help..
 
 Issues
 ------
 -Doesnt work in IE for some effed up reason
+-Validation is a bit pants..
 -Type a strong password and then a weak one - it doesnt update
 
 Demo
