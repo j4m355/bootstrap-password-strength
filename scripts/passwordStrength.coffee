@@ -63,10 +63,17 @@ $.fn.passwordStrength = (options) ->
   return @each(->
     that = this
     that.opts = {}
+    console.log "options "
+    console.log options
     that.opts = $.extend({}, $.fn.passwordStrength.defaults, options)
     that.div = $(that.opts.targetDiv)
     that.defaultClass = that.div.attr("class")
+    console.log "that.defaultClass"
+    console.log that.defaultClass
     that.percents = (if (that.opts.classes.length) then 100 / that.opts.classes.length else 100)
+
+    console.log "that.percents: "
+    console.log that.percents
     
     v = $(this).keyup(->      
       @el = $(this)  if typeof el is "undefined"
