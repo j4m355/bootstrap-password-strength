@@ -32,7 +32,6 @@ getPasswordStrength = (password) ->
     uppercaseScore = 3
 
   #special characters
-
   specialCharsRegString = new RegExp("^(a-z|A-Z|0-9)*[^#$%^&*()'*$!\"£]")
   passCharArray = password.split('')
   
@@ -43,7 +42,6 @@ getPasswordStrength = (password) ->
       nonSpecialsCount++
 
   specialsCount = password.length - nonSpecialsCount
-
   
   if specialsCount > 0
     specialScore = 3
