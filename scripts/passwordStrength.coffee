@@ -61,15 +61,27 @@ $(document).ready ->
     
     $('#passwordStrength').removeClass('passwordWeak')
     $('#passwordStrength').removeClass('passwordMedium')
-    $('#passwordStrength').removeClass('passwordStrong')  
+    $('#passwordStrength').removeClass('passwordStrong') 
+    $('#passwordStrengthLabel').removeClass('passwordWeakLabel')
+    $('#passwordStrengthLabel').removeClass('passwordMediumLabel')
+    $('#passwordStrengthLabel').removeClass('passwordStrongLabel')   
     
     if strength <= 3
-      $('#passwordStrength').addClass('passwordWeak')
+      $('#passwordStrength').addClass('passwordWeak')      
+      $('#passwordStrengthLabel').text('Weak')
+      $('#passwordStrengthLabel').addClass('passwordWeakLabel')
 
     if strength > 3 and strength < 7
-      $('#passwordStrength').addClass('passwordMedium')
+      $('#passwordStrength').addClass('passwordMedium')      
+      $('#passwordStrengthLabel').text('Medium')
+      $('#passwordStrengthLabel').addClass('passwordMediumLabel')
 
     if strength >= 7
-      $('#passwordStrength').addClass('passwordStrong')
+      $('#passwordStrength').addClass('passwordStrong')      
+      $('#passwordStrengthLabel').text('Strong')
+      $('#passwordStrengthLabel').addClass('passwordStrongLabel')
+
+  $('#passwordStrength').focusout ->
+    $('#passwordStrengthLabel').text('')
 
     
