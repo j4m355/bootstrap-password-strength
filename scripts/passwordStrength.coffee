@@ -50,7 +50,7 @@ getPasswordStrength = (password) ->
 
 
   passwordScore = passwordLengthScore + uppercaseScore + specialScore 
-  console.log passwordScore
+  
 
   passwordScore    
 
