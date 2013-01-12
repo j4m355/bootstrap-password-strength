@@ -10,7 +10,7 @@ Development is using coffee-script but minified javascript is included
 
 Issues
 ------
--Doesnt work in IE for some effed up reason
+-Doesnt work in versions of IE < 10 for some effed up reason - feel free to figure out
 
 
 Demo
